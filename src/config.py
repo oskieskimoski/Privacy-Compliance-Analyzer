@@ -11,10 +11,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 class Settings(BaseSettings):
     RAW_DATA_DIR: Path = BASE_DIR / "data" / "raw"
 
-    CHUNK_SIZE: int = 1000
-    CHUNK_OVERLAP: int = 200
-
-    EMBEDDING_MODEL_NAME: str = "sentence-transformers/all-MiniLM-L6-v2"
+    CHUNK_SIZE: int = 1500
+    CHUNK_OVERLAP: int = 300
+    VECTOR_DB_DIR: Path = BASE_DIR / "data" / "vector_db"
+    EMBEDDING_MODEL_NAME: str = "intfloat/multilingual-e5-small"
 
 
 settings = Settings()

@@ -5,7 +5,7 @@ from langchain_core.documents import Document
 from sentence_transformers import SentenceTransformer
 from src.config import settings
 
-class EmbeddingManager:
+class EmbeddingPipeline:
 
     def __init__(self, model_name: str = settings.EMBEDDING_MODEL_NAME):
         self.model_name = model_name
