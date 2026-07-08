@@ -68,16 +68,10 @@ class FaissVectorStore:
             self.metadata = pickle.load(f)
         print(f"[INFO] Loaded vector database {self.persist_dir}")
     def search(self, query_embedding: np.ndarray, top_k: int = 5):
-        D, I = self.index.search(query_embedding, top_k)
+        d, i = self.index.search(query_embedding, top_k)
         results = []
-        for idx, dist in zip(I[0], D[0]):
+        for idx, dist in zip(i[0], d[0]):
             meta = self.metadata[idx] if idx < len(self.metadata) else None
             results.append({"index": idx, "distance": dist, "metadata": meta})
         return results
 
-    def query(self, query_text: str, top_k: int = 5):
-        from langchain_core.documents import Document
-        formatted_query = f"{query_text}"
-        dummy_doc = Document(page_content=formatted_query)
-        query_emb = self.emb_pipe.generate_embeddings([dummy_doc]).astype('float32')
-        return self.search(query_emb, top_k=top_k)
