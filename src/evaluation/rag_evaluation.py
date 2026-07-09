@@ -4,7 +4,7 @@ from deepeval.test_case import LLMTestCase
 from deepeval.metrics import AnswerRelevancyMetric, FaithfulnessMetric
 from deepeval.models import GeminiModel
 
-from config import settings
+from src.config import settings
 from src.pipeline.privacy_compliance_rag import PrivacyComplianceRAG
 
 

@@ -3,9 +3,9 @@ import faiss
 import numpy as np
 import pickle
 from typing import List, Any
-from config import settings
+from src.config import settings
 
-from embedding import EmbeddingPipeline
+from src.database.embedding import EmbeddingPipeline
 
 
 class FaissVectorStore:

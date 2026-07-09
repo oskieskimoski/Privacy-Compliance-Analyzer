@@ -1,6 +1,6 @@
 import os
 from huggingface_hub import InferenceClient
-from config import settings
+from src.config import settings
 from src.database.vector_store import FaissVectorStore
 
 
