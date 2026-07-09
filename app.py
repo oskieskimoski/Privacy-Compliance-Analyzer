@@ -28,7 +28,7 @@ if user_query := st.chat_input("Type your question here..."):
         st.write(user_query)
 
     with st.spinner("Analyzing GDPR constraints..."):
-        bot_response = rag.ask(user_query)
+        bot_response, _ = rag.ask(user_query)
 
     with st.chat_message("assistant"):
         st.write(bot_response)
