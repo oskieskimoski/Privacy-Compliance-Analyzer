@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     CHUNK_OVERLAP: int = 300
     VECTOR_DB_DIR: Path = BASE_DIR / "data" / "vector_db"
     EMBEDDING_MODEL_NAME: str = "intfloat/multilingual-e5-small"
+    EVALUATION_DATA_DIR: Path = BASE_DIR / "data" / "rag_evaluation"
+    EVALUATION_MODEL_NAME: str = "gemini-3.1-flash-lite"
 
 
 settings = Settings()

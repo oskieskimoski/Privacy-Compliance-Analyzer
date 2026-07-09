@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "input": "A former customer of an online store requested the erasure of all their personal data based on the right to be forgotten (Article 17 GDPR). They also demand the deletion of data from VAT invoices issued to them 3 years ago. Does the store have to delete these invoices?",
+    "expected_output": "No, the online store is not permitted to delete VAT invoices at the customer's request. According to Article 17(3)(b) GDPR, the right to erasure does not apply when processing is necessary for compliance with a legal obligation which requires processing by Union or Member State law. The store has a legal obligation to retain accounting documents and invoices for a period of 5 years based on tax regulations."
+  },
+  {
+    "id": "2",
+    "input": "A hosting company (data processor) detected a data breach in a database it maintains for its client (data controller). Does the hosting company have 72 hours to report this breach to the President of the Personal Data Protection Office (UODO)?",
+    "expected_output": "No. The hosting company, as a data processor, does not report the breach directly to the supervisory authority (UODO) and is not bound by the 72-hour deadline. According to Article 33(2) GDPR, the processor is obliged to notify the data controller without undue delay after becoming aware of a personal data breach. It is the data controller's responsibility to report the matter to the supervisory authority (UODO) within 72 hours, if necessary."
+  },
+  {
+    "id": "3",
+    "input": "A citizen submitted a subject access request (SAR / copy of data) to a bank. How much time does the bank have to fulfill this request under the GDPR, and can this deadline be extended?",
+    "expected_output": "According to Article 12(3) GDPR, the controller shall provide information on action taken on a request without undue delay and in any event within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests. However, the controller must inform the individual of any such extension within one month of receipt of the request, together with the reasons for the delay."
+  },
+  {
+    "id": "4",
+    "input": "A small private medical clinic employs 3 doctors and processes its patients' medical data. Does such a facility have an absolute obligation to appoint a Data Protection Officer (DPO)?",
+    "expected_output": "No, a small medical clinic typically does not have an absolute obligation to appoint a DPO. According to Article 37(1)(c) GDPR, this obligation arises when the core activities consist of processing on a large scale of special categories of data (sensitive data). Processing personal data by an individual doctor or a small clinic providing medical care, according to Recital 91 of the GDPR, does not constitute processing on a large scale."
+  },
+  {
+    "id": "5",
+    "input": "A user withdrew their consent for data processing for marketing purposes. They also demanded that all prior processing of their data be declared illegal. Does the withdrawal of consent have retroactive effect?",
+    "expected_output": "No, the withdrawal of consent does not operate retroactively. According to Article 7(3) GDPR, the withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior marketing activities remain fully lawful, but the controller must immediately cease further processing from the moment consent is withdrawn."
+  }
+]
