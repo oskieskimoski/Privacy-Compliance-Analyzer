@@ -5,7 +5,7 @@ from deepeval.metrics import AnswerRelevancyMetric, FaithfulnessMetric
 from deepeval.models import GeminiModel
 
 from config import settings
-from src.PrivacyComplianceRAG import PrivacyComplianceRAG
+from src.pipeline.privacy_compliance_rag import PrivacyComplianceRAG
 
 
 def run_deepeval_suite():

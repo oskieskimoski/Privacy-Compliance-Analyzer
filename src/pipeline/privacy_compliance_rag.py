@@ -1,7 +1,7 @@
 import os
 from huggingface_hub import InferenceClient
-from src.config import settings
-from src.VectorStore import FaissVectorStore
+from config import settings
+from src.database.vector_store import FaissVectorStore
 
 
 class PrivacyComplianceRAG:

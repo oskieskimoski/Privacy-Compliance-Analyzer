@@ -1,5 +1,4 @@
-import os
-from PrivacyComplianceRAG import PrivacyComplianceRAG
+from src.pipeline.privacy_compliance_rag import PrivacyComplianceRAG
 
 def main():
     try:
